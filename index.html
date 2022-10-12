@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing:</h4>
+                <h2>Fall 77th & 2th</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url('https://wallpaperaccess.com/thumb/2459224.jpg')"></div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat icon-repeat"></i>
+                    <!-- <i class="fa-solid fa-repeat-1 icon-repeat-1"></i> -->
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="bnt btn-toggle-play">
+                    <i class="fas fa-pause icon-pause" style="padding-left: 2px"></i>
+                    <i class="fas fa-play icon-play" style="padding-left: 5px"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+
+            <!-- Progress -->
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+            <!-- Audio -->
+            <audio src="" id="audio"></audio>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+            <!-- Song -->
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
